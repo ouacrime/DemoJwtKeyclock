@@ -31,3 +31,13 @@ j
 :ecom-app-angular/src/app/ui/products/products.component.ts,4\7\479e36ab6bd3a53b6b68b9e9535111968aeef8f8
 V
 &ecom-app-angular/src/app/app.module.ts,a\6\a6e7002d7eb74fa48fefa396d375c74032fdb320
+Œ
+\inventory-service/src/main/java/net/ouacrime/inventoryservice/security/JwtAuthConverter.java,9\a\9a611d8365524d637698401642405f013c0862cb
+a
+1ecom-app-angular/src/assets/silent-check-sso.html,3\3\33d9c1671d9086aa8a185dbc7812121f04fae0f7
+]
+-ecom-app-angular/src/app/guards/auth.guard.ts,5\1\51cad6efcc5394fc615ce728d40071df53b750aa
+Y
+)ecom-app-angular/src/app/app.component.ts,6\d\6dc03cb8b8dd7c5d5090032393767f071339e7c7
+O
+ecom-app-angular/src/index.html,1\f\1f953bfe2a2dd88007ab7f0016c97b369c652225

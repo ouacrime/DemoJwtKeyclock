@@ -3,6 +3,8 @@ package net.ouacrime.inventoryservice.web;
 
 import net.ouacrime.inventoryservice.entities.Product;
 import net.ouacrime.inventoryservice.repository.ProductReposetory;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,27 +12,23 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 public class ProductRestController {
+    private ProductReposetory productRepository;
 
-    private ProductReposetory productReposetory;
-
-    public ProductRestController(ProductReposetory productReposetory)
-    {
-        this.productReposetory = productReposetory;
+    public ProductRestController(ProductReposetory productRepository) {
+        this.productRepository = productRepository;
     }
-
     @GetMapping("/products")
-    public List<Product> productList()
-    {
-        return productReposetory.findAll();
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public List<Product> productList(){
+        return productRepository.findAll();
     }
-
     @GetMapping("/products/{id}")
-    public Product productById(@PathVariable String id)
-    {
-        return productReposetory.findById(id).get();
+    @PreAuthorize("hasAuthority('USER')")
+    public Product productById(@PathVariable String id){
+        return productRepository.findById(id).get();
     }
-
-
-
-
+    @GetMapping("/auth")
+    public Authentication authentication(Authentication authentication){
+        return authentication;
+    }
 }
