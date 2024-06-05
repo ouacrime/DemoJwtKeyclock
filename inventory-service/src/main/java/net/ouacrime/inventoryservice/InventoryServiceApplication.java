@@ -21,9 +21,9 @@ public class InventoryServiceApplication {
     CommandLineRunner commandLineRunner(ProductReposetory productReposetory)
     {
         return args -> {
-            productReposetory.save(Product.builder().id(UUID.randomUUID().toString()).name("computer").price(2300).quantity(12).build());
-            productReposetory.save(Product.builder().id(UUID.randomUUID().toString()).name("printer").price(1500).quantity(6).build());
-            productReposetory.save(Product.builder().id(UUID.randomUUID().toString()).name("smart phone").price(5200).quantity(18).build());
+            productReposetory.save(Product.builder().id("P01").name("computer").price(2300).quantity(12).build());
+            productReposetory.save(Product.builder().id("P02").name("printer").price(1500).quantity(6).build());
+            productReposetory.save(Product.builder().id("P03").name("smart phone").price(5200).quantity(18).build());
 
         };
     }

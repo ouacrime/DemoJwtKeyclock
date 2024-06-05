@@ -65,3 +65,17 @@ Horder-service/src/main/java/net/ouacrime/orderservice/model/Product.java,4\e\4
 Torder-service/src/main/java/net/ouacrime/orderservice/security/JwtAuthConverter.java,b\e\bece1f0dee01ee57559006882e129eae977a9d42
 „
 Torder-service/src/main/java/net/ouacrime/orderservice/web/OrdersRestControllers.java,c\3\c3f95902a2f85ab9c245ec9ddb9ca46b71badb5c
+f
+6ecom-app-angular/src/app/ui/orders/orders.component.ts,6\8\6819e2f37f60cbe1e5e20768d3acf3cd3a224aa6
+h
+8ecom-app-angular/src/app/ui/orders/orders.component.html,d\3\d3c9f047dfabe45e251ffdc572a9f206d0f71bd8
+k
+;ecom-app-angular/src/app/ui/orders/orders.component.spec.ts,a\f\afcb766bef188eebaac2bf4c451683bbe9f9dfa1
+^
+.ecom-app-angular/src/app/app.component.spec.ts,0\a\0ad5aecaaaaff99fbcb022fe19c7963a6656b3c9
+ˆ
+Xorder-service/src/main/java/net/ouacrime/orderservice/interceptors/FeignInterceptor.java,2\c\2ce7dc9b89a60ff236013e5435abed2ffcacc7f2
+v
+Fecom-app-angular/src/app/ui/order-details/order-details.component.html,4\6\463037d8ad98bf93183872d762e9ecbee0add7ad
+t
+Decom-app-angular/src/app/ui/order-details/order-details.component.ts,a\5\a511edb0e94b7bf70096659d688e0f4fe8b18be4

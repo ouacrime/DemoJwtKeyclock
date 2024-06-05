@@ -32,7 +32,8 @@ public class OrderServiceApplication {
                                         InventoryRestClient inventoryRestClient)
     {
         return args -> {
-            List<Product> allProducts = inventoryRestClient.getAllProducts();
+            //List<Product> allProducts = inventoryRestClient.getAllProducts();
+            List<String> productsIds = List.of("P01","P02","P03");
             for (int i =0; i<5; i++)
             {
                 Order order = Order.builder()
@@ -41,11 +42,11 @@ public class OrderServiceApplication {
                         .state(OrderState.PENDING)
                         .build();
                 Order saveOrder = orderRepository.save(order);
-                allProducts.forEach(p->{
+                productsIds.forEach(p->{
                     ProductItem productItem = ProductItem.builder()
-                            .productId(p.getId())
+                            .productId(p)
                             .quantity(new Random().nextInt(20))
-                            .price(p.getPrice())
+                            .price(Math.random()*6000+100)
                             .order(saveOrder)
                             .build();
                     productItemRepository.save(productItem);
